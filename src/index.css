@@ -1,0 +1,63 @@
+/* Garantir que body e html ocupem toda a altura da janela */
+html, body {
+  height: 100%; /* Ocupa 100% da altura da tela */
+  margin: 0; /* Remove margens padrão */
+  /* display: flex; */ /* Usar flexbox para alinhamento */
+  /* justify-content: center; */ /* Alinha o conteúdo horizontalmente */
+  /* align-items: center;  *//* Alinha o conteúdo verticalmente */
+  font-family: 'Arial', sans-serif; /* Definindo uma fonte mais simples, caso você queira */
+}
+
+
+/* Outras regras do index.css (manter seu estilo geral) */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+ background-color: #f0f0f0; /* Cor de fundo clara */
+}
+
+/* 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+ */
+
+ footer {
+  background-color: #f8f9fa;
+ }
