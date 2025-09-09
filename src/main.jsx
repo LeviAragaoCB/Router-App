@@ -1,8 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Login } from './pages/Login.jsx';
 import { Cadastro } from './pages/Cadastro.jsx';
 import { NotFound } from './pages/NotFound.jsx';
