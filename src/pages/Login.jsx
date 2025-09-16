@@ -13,7 +13,7 @@ export const Login = () => {
     const login = e => {
         /* evita recarregar a página */
         e.preventDefault();
-        console.log('logou');
+        console.log('dados de login', formData);
         navigate('/home');
     }
 
@@ -33,7 +33,10 @@ export const Login = () => {
     const handleInput = (e) => {
         console.log(e.target.id, e.target.value)
 
-        setFormData({[e.target.id]: e.target.value})
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        })
     }
     
 
@@ -41,7 +44,7 @@ export const Login = () => {
         <main className="form-signin w-100 m-auto">
             <img className="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
             <form onSubmit={login}>
-                <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+                <h1 className="h3 mb-3 fw-normal">Faça o Login</h1>
                 
                 <InputField
                     id='email'
@@ -68,7 +71,7 @@ export const Login = () => {
                         Remember me
                     </label>
                 </div>
-                <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                <button className="btn btn-success w-100 py-2" type="submit">Entrar</button>
                 <p className="mt-5 mb-3 text-body-secondary">© 2025</p>
             </form>
         </main>
