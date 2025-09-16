@@ -17,13 +17,25 @@ export const Login = () => {
         navigate('/home');
     }
 
-    const handleEmail = (e) => {
-        console.log(e.target.value)
-    }
+    // const handleEmail = (e) => {
+    //     console.log(e.target.value)
 
-    const handleSenha = (e) => {
-        console.log(e)
+    //     setFormData({email: e.target.value})
+    // }
+
+    // const handleSenha = (e) => {
+    //     console.log(e.target.value)
+
+    //     setFormData({senha: e.target.value})
+    // }
+
+    
+    const handleInput = (e) => {
+        console.log(e.target.id, e.target.value)
+
+        setFormData({[e.target.id]: e.target.value})
     }
+    
 
     return (
         <main className="form-signin w-100 m-auto">
@@ -37,7 +49,8 @@ export const Login = () => {
                     type='email'
                     placeholder='name@example.com'
                     value={formData.email}
-                    onChange={handleEmail}
+                    // onChange={handleEmail}
+                    onChange={handleInput}
                 />
                 <InputField 
                     id='senha'
@@ -45,7 +58,8 @@ export const Login = () => {
                     type='password'
                     placeholder='EX.:1234'
                     value={formData.senha}
-                    onChange={handleSenha}
+                    // onChange={handleSenha}
+                    onChange={handleInput}
                 />
                     
                 <div className="form-check text-start my-3">
@@ -55,7 +69,7 @@ export const Login = () => {
                     </label>
                 </div>
                 <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-                <p className="mt-5 mb-3 text-body-secondary">© 2017–2025</p>
+                <p className="mt-5 mb-3 text-body-secondary">© 2025</p>
             </form>
         </main>
     )
