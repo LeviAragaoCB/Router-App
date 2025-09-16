@@ -14,7 +14,15 @@ export const Login = () => {
         /* evita recarregar a página */
         e.preventDefault();
         console.log('dados de login', formData);
-        navigate('/home');
+
+        if(formData.email === "levi@tst.com" &&
+            formData.senha === "adm123") {
+                alert('Login efetuado com sucesso!');
+                navigate('/home')
+            } else{
+                alert('Credenciais inválidas! Tente novamente')
+            }
+
     }
 
     // const handleEmail = (e) => {
