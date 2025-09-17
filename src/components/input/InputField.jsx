@@ -6,7 +6,7 @@ export const InputField = (props) => {
             <div className="form-control">
                 <label htmlFor="floatingInput">{props.label}</label>
                 <input type={props.type} className="form-control" id={props.id} placeholder={props.placeholder}
-                value={props.value} onChange={props.onChange} />
+                value={props.value} onChange={props.onChange} onBlur={props.onBlur} />
             </div>
         </div>
     )

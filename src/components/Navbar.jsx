@@ -13,6 +13,7 @@ export const Navbar = () => {
                         <div className="navbar-nav">
                             <a className="nav-link active" aria-current="page" href="/home">Home</a>
                             <a className="nav-link" href="/usuarios">Usuários</a>
+                            <a className="nav-link" href="/cadastro">Cadastro</a>
                             <a className="nav-link" href="/contato">Contato</a>
                         </div>
                     </div>

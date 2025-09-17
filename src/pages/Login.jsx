@@ -15,16 +15,29 @@ export const Login = () => {
         e.preventDefault();
         console.log('dados de login', formData);
 
-        if(formData.email === "levi@tst.com" &&
-            formData.senha === "adm123") {
-                alert('Login efetuado com sucesso!');
-                navigate('/home')
-            } else{
-                alert('Credenciais inválidas! Tente novamente')
-            }
-
+        // Validação Individual
+        if (formData.email !== 'levi@tst.com') {
+            alert('Email inválido!');
+        } else if (formData.senha !== 'adm123') {
+            alert('Senha inválido!');
+        } else {
+            alert('Login efetuado com sucesso!');
+            navigate('/home');
+        }
     }
 
+        // Validação Integral
+    //     if(formData.email === "levi@tst.com" &&
+    //         formData.senha === "adm123") {
+    //             alert('Login efetuado com sucesso!');
+    //             navigate('/home')
+    //         } else{
+    //             alert('Credenciais inválidas! Tente novamente')
+    //         }
+
+    // }
+
+        // handle Individual
     // const handleEmail = (e) => {
     //     console.log(e.target.value)
 
